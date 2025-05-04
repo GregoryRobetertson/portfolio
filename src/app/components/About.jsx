@@ -26,7 +26,7 @@ export default function About() {
             {/* Frontend */}
             <div className="bg-black rounded-xl border">
               <h4 className="font-semibold mb-3 text-white p-6">Frontend</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 cursor-pointer">
                 {[
                   "HTML",
                   "CSS",
@@ -49,7 +49,7 @@ export default function About() {
             {/* Backend */}
             <div className="bg-black rounded-xl border ">
               <h4 className="font-semibold mb-3 text-white p-6">Backend</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 cursor-pointer">
                 {["Node.js", "Express", "Firebase", "APIs", "Jest"].map(
                   (tech) => (
                     <span
@@ -66,7 +66,7 @@ export default function About() {
             {/* Database */}
             <div className="bg-black rounded-xl border">
               <h4 className="font-semibold mb-3 text-white p-6">Database</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 cursor-pointer">
                 {["MySQL", "PostgreSQL", "MongoDB"].map((tech) => (
                   <span
                     key={tech}
@@ -81,7 +81,7 @@ export default function About() {
             {/* Tools */}
             <div className="bg-black rounded-xl border">
               <h4 className="font-semibold mb-3 text-white p-6">Tools</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 cursor-pointer">
                 {["API", "Git", "VS Code"].map((tool) => (
                   <span
                     key={tool}
