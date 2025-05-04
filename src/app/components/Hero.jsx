@@ -7,7 +7,8 @@ export default function Hero() {
       <div className="space-y-6">
         <h1 className="text-5xl font-bold">Hi I'm Gregory Robertson</h1>
         <p className="text-lg">
-          I specialize in building websites and web application.
+          I build custom websites and web applications designed to meet your
+          needs and help you achieve your goals.
         </p>
         <div className=" flex gap-4">
           <a
