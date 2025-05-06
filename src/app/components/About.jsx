@@ -8,9 +8,11 @@ export default function About() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Column - Intro Card */}
-          <div className="bg-white shadow-lg rounded-xl p-6 border">
-            <h3 className="text-xl font-semibold mb-4">My introduction</h3>
-            <p className="text-gray-700 mb-6">
+          <div className="bg-black shadow-lg rounded-xl p-6 border">
+            <h3 className="text-xl font-semibold mb-4 text-white">
+              My Introduction
+            </h3>
+            <p className="text-white mb-6">
               I’m a Full Stack Software Developer specializing in building
               high-performance, user-focused web applications with HTML, CSS,
               JavaScript, and React. I create fast, responsive, and scalable
