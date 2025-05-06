@@ -17,9 +17,9 @@ const services = [
 
 export default function ServiceSection() {
   return (
-    <div>
-      <h2>Services</h2>
-      <div>
+    <div className="px-4 py-12 sm:px-6 lg:px-8">
+      <h2 className="text-3xl text-center font-bold">Services</h2>
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-">
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} />
         ))}
