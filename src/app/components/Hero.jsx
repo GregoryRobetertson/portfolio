@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="mt-24 flex px-32 items-center justify-between max-lg:flex-col max-lg:px-8 ">
+    <section className="mt-24 flex px-32 items-center justify-between max-lg:flex-col max-lg:px-8">
       <div className="space-y-6">
         <h1 className="text-5xl font-bold">Hi I'm Gregory Robertson</h1>
         <p className="text-lg">
@@ -13,7 +13,7 @@ export default function Hero() {
         <div className=" flex gap-4">
           <a
             href="/"
-            className="bg-black text-white rounded-lg px-6 py-3 hover:bg-gray-600"
+            className="bg-white text-black rounded-lg px-6 py-3 hover:bg-gray-600"
           >
             Download Resume
           </a>

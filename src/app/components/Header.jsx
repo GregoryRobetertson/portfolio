@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
   return (
-    <div className="pt-12 ">
+    <div className="pt-12 bg-black text-white">
       <div className="container mx-auto px-4 flex relative">
         <div className="ml-10">
           <a href="/" className="text-2xl font-semibold">
@@ -17,12 +17,12 @@ export default function Header() {
               </a>
             </li>
             <li className="transition-all duration-200 ease-in-out  p-2 rounded-md cursor-pointer">
-              <a href="#" className="hover:text-red-700">
+              <a href="#Services" className="hover:text-red-700">
                 Services
               </a>
             </li>
             <li className="transition-all duration-200 ease-in-out  p-2 rounded-md cursor-pointer">
-              <a href="#" className="hover:text-red-700">
+              <a href="#Projects" className="hover:text-red-700">
                 Projects
               </a>
             </li>
