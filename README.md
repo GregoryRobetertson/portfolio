@@ -1,5 +1,7 @@
 ![alt text](profile.png)
 ![alt text](weather.png)
+![alt text](globalsphereconnect.png)
+![alt text](coffeeshop.png)
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
