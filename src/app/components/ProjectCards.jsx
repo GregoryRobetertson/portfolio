@@ -18,6 +18,7 @@ export default function ProjectCards() {
             text="A Social platform that focuses on the news, weather, and lets people post blogs and connect with each other."
             src="/images/globalsphereconnect.png"
             link="https://globalsphereconnect.netlify.app/"
+            skills={["NextJS", "React"]}
           />
           <Projects
             title="Sunrisesip - Coffee Shop E commerce site "

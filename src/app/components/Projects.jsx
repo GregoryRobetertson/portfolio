@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-export default function Projects({ title, text, src, link }) {
+export default function Projects({ title, text, src, link, skills = [] }) {
   return (
     <>
-      <div className="grid max-w-sm grid-row-[auto_1fr_auto]">
+      <div className="grid max-w-sm grid-row-[auto_1fr_auto] bg-white">
         <div className="md:col-span-1">
           <Image
             src={src}
@@ -15,11 +15,23 @@ export default function Projects({ title, text, src, link }) {
           />
         </div>
         <div className="px-6 py-4">
-          <h2 className="text-xl font-bold mb-2">{title}</h2>
-          <p>{text}</p>
+          <h2 className="text-xl font-bold mb-2 text-black">{title}</h2>
+          <p className="text-black">{text}</p>
+        </div>
+        <div>
+          {skills.map((skill, index) => (
+            <span
+              key={index}
+              className="bg-gray-700 text-sm text-white px-2 py-1 rounded-md gap6 hover:cursor-pointer"
+            >
+              {skill}
+            </span>
+          ))}
         </div>
         <div className="px-6 py-4">
-          <a href={link}>View Website</a>
+          <a href={link} className="text-black">
+            View Website
+          </a>
         </div>
       </div>
     </>
