@@ -18,11 +18,11 @@ export default function Projects({ title, text, src, link, skills = [] }) {
           <h2 className="text-xl font-bold mb-2 text-black">{title}</h2>
           <p className="text-black">{text}</p>
         </div>
-        <div>
+        <div className=" flex flex-wrap gap-3 ">
           {skills.map((skill, index) => (
             <span
               key={index}
-              className="bg-gray-700 text-sm text-white px-2 py-1 rounded-md gap6 hover:cursor-pointer"
+              className="inline-flex items-center bg-black text-white text-sm font-medium px-3 py-1 rounded-xl shadow-md hover:scale-105 transition-transform duration-200 cursor-pointer"
             >
               {skill}
             </span>
