@@ -1,8 +1,13 @@
+"use client";
+
 import About from "./components/About";
+import Contact from "./components/Contact";
+
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import ProjectCards from "./components/ProjectCards";
 import ServiceSection from "./components/ServiceSection";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -13,6 +18,8 @@ export default function Home() {
         <About />
         <ServiceSection />
         <ProjectCards />
+        <Contact />
+        <Footer />
       </main>
     </>
   );

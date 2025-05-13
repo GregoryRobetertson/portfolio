@@ -2,17 +2,20 @@ import React from "react";
 
 export default function About() {
   return (
-    <section className="py-16 my-24" id="about">
+    <section
+      className="py-16 my-24 bg-gradient-to-r from-[#4B0F0F] to-[#120505]"
+      id="about"
+    >
       <div className="max-w-6xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Left Column - Intro Card */}
-          <div className="bg-white shadow-lg rounded-xl p-6 border">
-            <h3 className="text-xl font-semibold mb-4 text-black">
+          <div className="bg-gradient-to-br from-zinc-900 to-black shadow-lg rounded-xl p-6 border">
+            <h3 className="text-xl font-semibold mb-4 text-white">
               My Introduction
             </h3>
-            <p className="text-black mb-6">
+            <p className="text-white mb-6">
               I’m a Full Stack Software Developer specializing in building
               high-performance, user-focused web applications with HTML, CSS,
               JavaScript, and React. I create fast, responsive, and scalable
@@ -26,8 +29,8 @@ export default function About() {
           {/* Right Column - Tech Stack */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {/* Frontend */}
-            <div className="bg-white rounded-xl border">
-              <h4 className="font-semibold mb-3 text-black p-6">Frontend</h4>
+            <div className="bg-gradient-to-br from-[#400101] to-[#1c0000] rounded-xl border">
+              <h4 className="font-semibold mb-3 text-white p-6">Frontend</h4>
               <div className="flex flex-wrap gap-2 cursor-pointer">
                 {[
                   "HTML",
@@ -49,8 +52,8 @@ export default function About() {
             </div>
 
             {/* Backend */}
-            <div className="bg-white rounded-xl border ">
-              <h4 className="font-semibold mb-3 text-black p-6">Backend</h4>
+            <div className="bg-gradient-to-br from-[#400101] to-[#1c0000] rounded-xl border ">
+              <h4 className="font-semibold mb-3 text-white p-6">Backend</h4>
               <div className="flex flex-wrap gap-2 cursor-pointer">
                 {["Node.js", "Express", "Firebase", "APIs", "Jest"].map(
                   (tech) => (
@@ -66,8 +69,8 @@ export default function About() {
             </div>
 
             {/* Database */}
-            <div className="bg-white rounded-xl border">
-              <h4 className="font-semibold mb-3 text-black p-6">Database</h4>
+            <div className="bg-gradient-to-br from-[#400101] to-[#1c0000] rounded-xl border">
+              <h4 className="font-semibold mb-3 text-white p-6">Database</h4>
               <div className="flex flex-wrap gap-2 cursor-pointer">
                 {["MySQL", "PostgreSQL", "MongoDB"].map((tech) => (
                   <span
@@ -81,8 +84,8 @@ export default function About() {
             </div>
 
             {/* Tools */}
-            <div className="bg-white rounded-xl border">
-              <h4 className="font-semibold mb-3 text-black p-6">Tools</h4>
+            <div className="bg-gradient-to-br from-[#400101] to-[#1c0000] rounded-xl border">
+              <h4 className="font-semibold mb-3 text-white p-6">Tools</h4>
               <div className="flex flex-wrap gap-2 cursor-pointer">
                 {["API", "Git", "VS Code"].map((tool) => (
                   <span
