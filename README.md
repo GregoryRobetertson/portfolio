@@ -1,40 +1,76 @@
-![alt text](profile.png)
+# 🧑‍💻 Gregory's Developer Portfolio
+
+This is my personal web developer portfolio built using modern web technologies. It showcases my skills, featured projects, and provides a way for clients or employers to get in touch.
+
+---
+
+## 📸 Preview
+
+![Portfolio Screenshot] [alt text](profile.png)
 ![alt text](weather.png)
 ![alt text](globalsphereconnect.png)
 ![alt text](coffeeshop.png)
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+> 📌 Deployed on [Your Deployment Platform] — [Insert Link Here]
 
-First, run the development server:
+---
+
+## 🛠 Tech Stack
+
+### 🚀 Frontend
+
+- **Next.js 15** – React-based framework with routing, image optimization, and performance
+- **React 19** – Declarative UI library for building reusable components
+
+### 🎨 Styling
+
+- **Tailwind CSS 4** – Utility-first CSS framework for fast and responsive design
+- **Bootstrap 5.3** – Optional hybrid use for layout or prebuilt UI components
+
+### 🧩 Animation
+
+- **Framer Motion** – Rich, declarative animations for React components
+
+### 📬 Email Integration
+
+- **EmailJS (`@emailjs/browser`)** – Send contact form data directly to email
+- **dotenv** – Environment variable management for EmailJS credentials
+
+### 🛠 Development Tools
+
+- **Turbopack** – Next.js's new Rust-based bundler for faster development
+- **ESLint + `eslint-config-next`** – Code linting for consistency and quality
+
+---
+
+## 📁 Project Structure
+
+---
+
+## 📬 Contact
+
+Want to collaborate, hire me, or just say hello?
+
+- Use the contact form on the site
+- Or send an email directly to [gregoryrobertson.dev@gmail.com]
+
+---
+
+## 🚧 Setup Instructions
+
+To run the portfolio locally:
 
 ```bash
+# Clone the repo
+git clone https://github.com/your-username/your-portfolio.git
+
+# Navigate into the folder
+cd your-portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
