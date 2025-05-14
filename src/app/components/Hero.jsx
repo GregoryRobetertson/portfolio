@@ -9,6 +9,9 @@ export default function Hero() {
 
   return (
     <section className="relative h-screen w-full text-white bg-cover bg-no-repeat bg-center bg-[url(/images/herobg.png)]">
+      {/*Overlay*/}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+
       {/* Content */}
       <div className="relative z-10 flex items-center justify-between h-full px-32 max-lg:flex-col max-lg:pt-32 max-lg:px-8">
         {/* Left Text */}

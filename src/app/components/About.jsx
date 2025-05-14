@@ -89,7 +89,7 @@ export default function About() {
               <div className="bg-black rounded-xl border">
                 <h4 className="font-semibold mb-3 text-white p-6">Database</h4>
                 <div className="flex flex-wrap gap-2 cursor-pointer p-6">
-                  {["MySQL", "PostgreSQL", "MongoDB"].map((tech) => (
+                  {["MySQL", "MongoDB"].map((tech) => (
                     <span
                       key={tech}
                       className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700 hover:scale-105"
