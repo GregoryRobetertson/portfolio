@@ -34,7 +34,7 @@ export default function Contact() {
           duration: 1.5, // slow and smooth
           ease: "easeOut",
         }}
-        className="bg-zinc-950"
+        className="bg-zinc-950 py-16"
       >
         <h1 className="mb-12 text-white text-3xl font-bold text-center">
           Contact

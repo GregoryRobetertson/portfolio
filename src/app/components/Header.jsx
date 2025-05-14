@@ -21,7 +21,7 @@ export default function Header() {
               <li key={item.name}>
                 <a
                   href={item.href}
-                  className="px-4 py-2 rounded-md transition duration-200 ease-in-out hover:bg-gradient-to-r from-[#7F1D1D] to-[#1F0A0A]"
+                  className="px-4 py-2 rounded-md transition duration-200 ease-in-out hover:text-blue-700"
                 >
                   {item.name}
                 </a>

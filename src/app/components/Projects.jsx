@@ -30,7 +30,10 @@ export default function Projects({ title, text, src, link, skills = [] }) {
             ))}
           </div>
           <div className="px-6 py-4">
-            <a href={link} className="text-white hover:underline">
+            <a
+              href={link}
+              className="text-white hover:underline hover:text-blue-700"
+            >
               View Website
             </a>
           </div>

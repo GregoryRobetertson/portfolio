@@ -17,15 +17,15 @@ export default function About() {
         id="about"
       >
         <div className="max-w-6xl mx-auto px-4 py-16 ">
-          <h2 className="text-3xl font-bold text-center mb-12">About Me</h2>
+          <h2 className="text-4xl font-bold text-center mb-12">About Me</h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {/* Left Column - Intro Card */}
             <div className="bg-gradient-to-br from-zinc-900 to-black shadow-lg rounded-xl p-6 border relative">
-              <h3 className="text-xl font-semibold mb-4 text-white">
+              <h3 className="text-2xl font-semibold mb-4 text-white">
                 My Introduction
               </h3>
-              <p className="text-white mb-6">
+              <p className="text-white mb-6 text-lg leading-relaxed">
                 I’m a{" "}
                 <span className="text-blue-400 font-semibold">Full Stack</span>{" "}
                 Software Developer specializing in building high-performance,
@@ -40,9 +40,9 @@ export default function About() {
             </div>
 
             {/* Right Column - Tech Stack */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               {/* Frontend */}
-              <div className="bg-black rounded-xl border pt-8 relative">
+              <div className="bg-black rounded-2xl border pt-8 relative">
                 {/* Visual Connection Indicator */}
                 <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-8 bg-blue-500 rounded-full"></div>
                 <h4 className="font-semibold mb-3 text-white p-6">Frontend</h4>
@@ -58,7 +58,7 @@ export default function About() {
                   ].map((tech) => (
                     <span
                       key={tech}
-                      className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700"
+                      className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700 hover:scale-105"
                     >
                       {tech}
                     </span>
@@ -76,7 +76,7 @@ export default function About() {
                     (tech) => (
                       <span
                         key={tech}
-                        className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700"
+                        className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700 hover:scale-105"
                       >
                         {tech}
                       </span>
@@ -92,7 +92,7 @@ export default function About() {
                   {["MySQL", "PostgreSQL", "MongoDB"].map((tech) => (
                     <span
                       key={tech}
-                      className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700"
+                      className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700 hover:scale-105"
                     >
                       {tech}
                     </span>
@@ -107,7 +107,7 @@ export default function About() {
                   {["API", "Git", "VS Code"].map((tool) => (
                     <span
                       key={tool}
-                      className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700"
+                      className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700 hover:scale-105"
                     >
                       {tool}
                     </span>
