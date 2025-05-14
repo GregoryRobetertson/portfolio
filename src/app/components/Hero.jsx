@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Hero() {
   const text = "Hi I'm Gregory Robertson";
@@ -70,6 +71,35 @@ export default function Hero() {
               className="bg-blue-700 text-white rounded-lg px-6 py-3 hover:bg-blue-800"
             >
               Get In Touch
+            </a>
+          </motion.div>
+          <motion.div
+            className="flex gap-6 mt-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1, duration: 0.8 }}
+          >
+            <a
+              href="https://github.com/GregoryRobetertson"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition-colors duration-200"
+            >
+              <Github size={28} />
+            </a>
+            <a
+              href="https://linkedin.com/in/GregoryRobertsonJr-developer"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-500 transition-colors duration-200"
+            >
+              <Linkedin size={28} />
+            </a>
+            <a
+              href="mailto:gregoryrobertson.dev@gmail.com"
+              className="hover:text-blue-500 transition-colors duration-200"
+            >
+              <Mail size={28} />
             </a>
           </motion.div>
         </div>
