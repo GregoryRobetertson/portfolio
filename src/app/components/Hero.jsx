@@ -13,21 +13,27 @@ export default function Hero() {
         {/* Left Text */}
         <div className="space-y-6 max-w-xl">
           <motion.h1 className="text-5xl font-bold leading-tight">
-            {letters.map((letter, index) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  delay: index * 0.05,
-                  duration: 0.5,
-                }}
-              >
-                {letter}
-              </motion.span>
-            ))}
-          </motion.h1>
+            {letters.map((letter, index) => {
+              const nameStart = text.indexOf("Gregory Robertson");
+              const nameEnd = nameStart + "Gregory Robertson".length;
+              const isName = index >= nameStart && index < nameEnd;
 
+              return (
+                <motion.span
+                  key={index}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{
+                    delay: index * 0.05,
+                    duration: 0.5,
+                  }}
+                  className={isName ? "text-blue-700" : ""}
+                >
+                  {letter === " " ? "\u00A0" : letter}
+                </motion.span>
+              );
+            })}
+          </motion.h1>
           <motion.p
             className="text-lg text-gray-200"
             initial={{ opacity: 0 }}
@@ -42,7 +48,17 @@ export default function Hero() {
           </motion.p>
 
           {/* Buttons */}
-          <div className="flex gap-4">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }} // triggers when 20% is visible
+            transition={{
+              delay: 0.4,
+              duration: 1.5, // slow and smooth
+              ease: "easeOut",
+            }}
+            className="flex gap-4"
+          >
             <a
               href="/"
               className="bg-white text-black rounded-lg px-6 py-3 hover:bg-gray-600"
@@ -55,7 +71,7 @@ export default function Hero() {
             >
               Get In Touch
             </a>
-          </div>
+          </motion.div>
         </div>
 
         {/* Profile Image */}
