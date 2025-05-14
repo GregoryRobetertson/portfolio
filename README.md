@@ -10,6 +10,7 @@ This is my personal web developer portfolio built using modern web technologies.
 ![alt text](weather.png)
 ![alt text](globalsphereconnect.png)
 ![alt text](coffeeshop.png)
+![alt text](herobg.png)
 
 > 📌 Deployed on [Your Deployment Platform] — [Insert Link Here]
 
