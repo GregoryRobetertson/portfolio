@@ -1,5 +1,6 @@
 "use client";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 import React, { useRef } from "react";
 
 export default function Contact() {
@@ -24,14 +25,24 @@ export default function Contact() {
   };
   return (
     <>
-      <div className="bg-gradient-to-r from-[#4B0F0F] to-[#120505]">
+      <motion.section
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }} // triggers when 20% is visible
+        transition={{
+          delay: 0.4,
+          duration: 1.5, // slow and smooth
+          ease: "easeOut",
+        }}
+        className="bg-zinc-950"
+      >
         <h1 className="mb-12 text-white text-3xl font-bold text-center">
           Contact
         </h1>
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="max-w-lg mx-auto p-6 bg-gradient-to-br from-[#400101] to-[#1c0000 rounded-xl shadow-lg text-white space-y-4"
+          className="max-w-lg mx-auto p-6 bg-black rounded-xl shadow-lg text-white space-y-4"
           id="Contact"
         >
           <div>
@@ -43,7 +54,7 @@ export default function Contact() {
               name="user_name"
               id="name"
               required
-              className="w-full mt-1 p-3 bg-zinc-900 text-white border border-zinc-700 rounded-md focus:outline-none focus:border-red-500"
+              className="w-full mt-1 p-3 bg-zinc-900 text-white border border-zinc-700 rounded-md focus:outline-none focus:border-blue-500"
             />
           </div>
 
@@ -56,7 +67,7 @@ export default function Contact() {
               name="user_email"
               id=" Your Email"
               required
-              className="w-full mt-1 p-3 bg-zinc-900 text-white border border-zinc-700 rounded-md focus:outline-none focus:border-red-500"
+              className="w-full mt-1 p-3 bg-zinc-900 text-white border border-zinc-700 rounded-md focus:outline-none focus:border-blue-500"
             />
           </div>
 
@@ -69,17 +80,17 @@ export default function Contact() {
               id="message"
               rows="5"
               required
-              className="w-full mt-1 p-3 bg-zinc-900 text-white border border-zinc-700 rounded-md focus:outline-none focus:border-red-500"
+              className="w-full mt-1 p-3 bg-zinc-900 text-white border border-zinc-700 rounded-md focus:outline-none focus:border-blue-500"
             />
           </div>
 
           <input
             type="submit"
             value="Send"
-            className="bg-red-600 hover:bg-red-700 transition-colors text-white px-6 py-3 rounded-md cursor-pointer font-semibold"
+            className="bg-blue-600 hover:bg-blue-700 transition-colors text-white px-6 py-3 rounded-md cursor-pointer font-semibold"
           />
         </form>
-      </div>
+      </motion.section>
     </>
   );
 }
