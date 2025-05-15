@@ -8,9 +8,9 @@ export default function Hero() {
   const letters = text.split("");
 
   return (
-    <section className="relative h-screen w-full text-white bg-cover bg-no-repeat bg-center bg-[url(/images/herobg.png)]">
+    <section className="relative h-screen w-full text-white bg-cover bg-no-repeat bg-center bg-[url(/images/hero.png)]">
       {/*Overlay*/}
-      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="absolute inset-0 bg-black opacity-85"></div>
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-between h-full px-32 max-lg:flex-col max-lg:pt-32 max-lg:px-8">
@@ -47,8 +47,8 @@ export default function Hero() {
               duration: 0.6,
             }}
           >
-            I build custom websites and web applications designed to meet your
-            needs and help you achieve your goals.
+            I design and build fast, modern web applications for businesses and
+            startups.
           </motion.p>
 
           {/* Buttons */}
