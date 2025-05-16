@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
+import NowStatus from "./NowStatus";
 
 export default function Hero() {
   const text = "Hi I'm Gregory Robertson";
@@ -106,6 +107,19 @@ export default function Hero() {
             </a>
           </motion.div>
         </div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }} // triggers when 20% is visible
+          transition={{
+            delay: 0.4,
+            duration: 1.5, // slow and smooth
+            ease: "easeOut",
+          }}
+          className="fixed top-20 right-4 z-50"
+        >
+          <NowStatus />
+        </motion.div>
 
         {/* Profile Image */}
         <div className="mt-8 max-lg:mt-12">
