@@ -14,10 +14,10 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black opacity-85"></div>
 
       {/* Content */}
-      <div className="relative z-10 flex items-center justify-between h-full px-32 max-lg:flex-col max-lg:pt-32 max-lg:px-8">
+      <div className="relative z-10 flex items-center justify-between max-lg:justify-start h-full px-12 md:px-20 lg:px-28 xl:px-32 max-lg:flex-col max-lg:pt-32">
         {/* Left Text */}
         <div className="space-y-6 max-w-xl">
-          <motion.h1 className="text-5xl font-bold leading-tight">
+          <motion.h1 className="md:text-5xl font-bold leading-tight text-3xl sm:text-4xl">
             {letters.map((letter, index) => {
               const nameStart = text.indexOf("Gregory Robertson");
               const nameEnd = nameStart + "Gregory Robertson".length;
@@ -62,7 +62,7 @@ export default function Hero() {
               duration: 1.5, // slow and smooth
               ease: "easeOut",
             }}
-            className="flex gap-4"
+            className="flex flex-col sm:flex-row gap-4"
           >
             <a
               href="/"
@@ -78,7 +78,7 @@ export default function Hero() {
             </a>
           </motion.div>
           <motion.div
-            className="flex gap-6 mt-6"
+            className="flex gap-6 mt-6 justify-center max-lg:justify-start "
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.8 }}
@@ -122,13 +122,13 @@ export default function Hero() {
         </motion.div>
 
         {/* Profile Image */}
-        <div className="mt-8 max-lg:mt-12">
+        <div className="mt-8 max-lg:mt-12 flex jusitfy-center">
           <Image
             src="/images/profile.png"
             alt="profile image"
             width={300}
             height={300}
-            className="rounded-full border-4 border-white shadow-lg"
+            className="rounded-full border-4 border-white shadow-lg w-[200px] sm:w-[250px] h-auto"
           />
         </div>
       </div>
