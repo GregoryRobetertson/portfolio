@@ -1,7 +1,15 @@
 import Image from "next/image";
 import React from "react";
 
-export default function Projects({ title, text, src, link, skills = [] }) {
+export default function Projects({
+  title,
+  text,
+  src,
+  github,
+  backend,
+  link,
+  skills = [],
+}) {
   return (
     <>
       <section id="Projects">
@@ -29,13 +37,34 @@ export default function Projects({ title, text, src, link, skills = [] }) {
               </span>
             ))}
           </div>
-          <div className="px-6 py-4">
-            <a
-              href={link}
-              className="text-white hover:underline hover:text-blue-700"
-            >
-              View Website
-            </a>
+          <div className="px-6 py-4 flex gap-2">
+            {github && (
+              <a
+                href={github}
+                className="text-white hover:underline hover:text-blue-500"
+                target="_blank"
+              >
+                View Frontend Repository
+              </a>
+            )}
+            {backend && (
+              <a
+                href={backend}
+                className="text-white hover:underline hover:text-green-500"
+                target="_blank"
+              >
+                View Backend Repository
+              </a>
+            )}
+            {link && (
+              <a
+                href={link}
+                className="text-white hover:underline hover:text-blue-500"
+                target="_blank"
+              >
+                View Live Site
+              </a>
+            )}
           </div>
         </div>
       </section>

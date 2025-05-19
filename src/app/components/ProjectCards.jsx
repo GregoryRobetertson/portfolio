@@ -36,6 +36,8 @@ export default function ProjectCards() {
             title="Sunrisesip - Coffee Shop E commerce site "
             text="A online coffee shop for users to shop cofee products online."
             src="/images/coffeeshop.png"
+            github="https://github.com/GregoryRobetertson/coffee-shop-frontend"
+            backend="https://github.com/GregoryRobetertson/coffee-shop-backend/tree/main"
             link="https://sunrisesip.netlify.app/"
             skills={[
               "React",
@@ -47,6 +49,32 @@ export default function ProjectCards() {
               "Cloudinary",
               "MongoDB",
             ]}
+          />
+          <Projects
+            title="Kick Cartel - Coffee Shop E commerce Sneaker Shop "
+            text="A online Sneaker shop for users to sneakers online."
+            src="/images/kickcartel.png"
+            github="https://github.com/GregoryRobetertson/kick-cartel"
+            backend="https://github.com/GregoryRobetertson/kick-cartel-backend"
+            link="https://kickcartel.netlify.app/"
+            skills={[
+              "React",
+              "Express",
+              "NextJs",
+              "Context API",
+              "Tailwind Css",
+              "Bootstrap",
+              "Cloudinary",
+              "MongoDB",
+            ]}
+          />
+          <Projects
+            title="Snakeio - A Video Game "
+            text=" A classic snake game where the player controls a growing snake on a grid, collecting food to increase score and speed, while avoiding collisions with walls or itself."
+            src="/images/snakeio.png"
+            github="https://github.com/GregoryRobetertson/snakeGame"
+            link="https://snakeiogame.netlify.app/"
+            skills={["HTML", "CSS", "JavaScript"]}
           />
         </div>
       </motion.div>
