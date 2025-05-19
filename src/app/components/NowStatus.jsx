@@ -20,7 +20,7 @@ export default function NowStatus() {
   });
 
   return (
-    <div className="p-4 bg-zinc-900 text-white rounded-xl shadow-md max-w-md">
+    <div className="p-4 bg-zinc-900 text-white rounded-xl shadow-md max-w-md ">
       <p className="text-sm text-gray-400 mb-1">What I'm working on:</p>
       <p className="text-base font-semibold">
         {status?.now || "No recent activity"}

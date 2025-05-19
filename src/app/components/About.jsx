@@ -26,14 +26,20 @@ export default function About() {
                 My Introduction
               </h3>
               <p className="text-white mb-6 text-lg leading-relaxed">
-                I’m a{" "}
-                <span className="text-blue-400 font-semibold">Full Stack</span>{" "}
-                Software Developer specializing in building high-performance,
-                user-focused web applications with HTML, CSS, JavaScript, and
-                React. I create fast, responsive, and scalable digital solutions
-                that drive results and deliver long-term value. Whether you're
-                launching a startup or scaling an existing product, I build
-                software that performs, impresses, and grows with your vision.
+                I’m <span className="text-blue-400 font-semibold">Gregory</span>{" "}
+                a full stack developer passionate about building responsive,
+                user-friendly web applications. I specialize in tools like
+                React, Node.js, Express, and Tailwind CSS, and I love turning
+                ideas into real, working products. Whether I’m designing a clean
+                UI or working behind the scenes on the backend, I enjoy creating
+                solutions that are fast, functional, and easy to use. I'm always
+                learning and staying up to date with the latest tech trends.
+                Outside of coding, I’m focused on personal and professional
+                growth. In my free time, I enjoy playing drums and video games.
+                I'm currently looking for new opportunities to join great teams
+                and build things that make a real impact. Reach out if you need
+                a developer to bring your website idea to life I’m always open
+                to new projects.
               </p>
               {/* Visual Connection Line */}
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-2 w-16 bg-blue-500 rounded-full"></div>
