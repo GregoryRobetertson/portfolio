@@ -52,7 +52,7 @@ Want to collaborate, hire me, or just say hello?
 
 ## Live Activity Signal
 
-- **Created a what I'm working note that let viewers know that I'm still active.**
+- **Created a live activity signal note that let viewers know that I'm still active and what I'm current working on.**
 
 ## 🚧 Setup Instructions
 
