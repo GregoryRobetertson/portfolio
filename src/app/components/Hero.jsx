@@ -65,7 +65,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-4"
           >
             <a
-              href="/"
+              href="/resume.zip"
               className="bg-white text-black rounded-lg px-6 py-3 hover:bg-gray-600"
             >
               Download Resume
