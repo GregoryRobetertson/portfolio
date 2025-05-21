@@ -41,6 +41,29 @@ export default function About() {
                 a developer to bring your website idea to life I’m always open
                 to new projects.
               </p>
+
+              <div className="mt-8 p-4 bg-zinc-900 border-l-4 border-blue-500 rounded-md cursor-pointer hover:shadow-lg transition-shadow duration-300">
+                <h4 className="text-blue-400 font-semibold mb-1">
+                  Latest from my Blog
+                </h4>
+                <a
+                  href="/content/why-small-business-needs-modern-website-2025.md"
+                  className="text-white font-bold text-lg hover:underline"
+                >
+                  How to Build Responsive React Apps — A Beginner’s Guide
+                </a>
+                <p className="text-zinc-400 mt-1 text-sm leading-relaxed">
+                  A quick overview of key concepts to make your React projects
+                  mobile-friendly and smooth.
+                </p>
+                <a
+                  href="/blog"
+                  className="inline-block mt-2 text-blue-500 hover:underline font-medium"
+                >
+                  See all blog posts →
+                </a>
+              </div>
+
               {/* Visual Connection Line */}
               <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-2 w-16 bg-blue-500 rounded-full"></div>
             </div>
