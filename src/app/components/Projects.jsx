@@ -17,9 +17,10 @@ export default function Projects({
           <div className="md:col-span-1">
             <Image
               src={src}
-              width={300}
-              height={300}
-              alt="title"
+              alt={title}
+              width={200}
+              height={200}
+              loading="lazy"
               className="w-full height-60 object-cover rounded-xl"
             />
           </div>
