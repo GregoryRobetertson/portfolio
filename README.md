@@ -4,6 +4,16 @@ This is my personal web developer portfolio built using modern web technologies.
 
 ---
 
+## When i returned i will use dynamic import for my now status in my hero
+
+![alt text](coffeeshop.webp)
+![alt text](globalsphereconnect.webp)
+![alt text](hero.webp)
+![alt text](kickcartel.webp)
+![alt text](profile.webp)
+![alt text](snakeio.webp)
+![alt text](weather.webp)
+
 ## My next step is to finishing up my blog
 
 ## Bugs
