@@ -7,10 +7,10 @@ export default function ServiceCard({ icon, title, description }) {
     <motion.div
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.2 }} // triggers when 20% is visible
+      viewport={{ once: true, amount: 0.2 }}
       transition={{
         delay: 0.4,
-        duration: 1.5, // slow and smooth
+        duration: 1.5,
         ease: "easeOut",
       }}
       className="bg-[#141A23] rounded-xl p-6 text-center"
