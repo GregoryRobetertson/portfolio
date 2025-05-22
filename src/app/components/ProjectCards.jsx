@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Projects from "./Projects";
 import { motion } from "framer-motion";
@@ -21,21 +22,21 @@ export default function ProjectCards() {
           <Projects
             title="Forecast Pro - Weather App"
             text="App that lets people check the weather by searching a city name."
-            src="/images/weather.png"
+            src="/images/weather.webp"
             link="https://forecastpro.netlify.app/"
             skills={["NextJS", "React", "Tailwind Css", "Bootstrap"]}
           />
           <Projects
             title="GlobalSphere Connect - Social Media Platform"
             text="A Social platform that focuses on the news, weather, and lets people post blogs and connect with each other."
-            src="/images/globalsphereconnect.png"
+            src="/images/globalsphereconnect.webp"
             link="https://globalsphereconnect.netlify.app/"
             skills={["NextJS", "React", "Firebase", "MongoDB", "Tailwind Css"]}
           />
           <Projects
             title="Sunrisesip - Coffee Shop E commerce site "
             text="A online coffee shop for users to shop cofee products online."
-            src="/images/coffeeshop.png"
+            src="/images/coffeeshop.webp"
             github="https://github.com/GregoryRobetertson/coffee-shop-frontend"
             backend="https://github.com/GregoryRobetertson/coffee-shop-backend/tree/main"
             link="https://sunrisesip.netlify.app/"
@@ -53,7 +54,7 @@ export default function ProjectCards() {
           <Projects
             title="Kick Cartel - Coffee Shop E commerce Sneaker Shop "
             text="A online Sneaker shop for users to sneakers online."
-            src="/images/kickcartel.png"
+            src="/images/kickcartel.webp"
             github="https://github.com/GregoryRobetertson/kick-cartel"
             backend="https://github.com/GregoryRobetertson/kick-cartel-backend"
             link="https://kickcartel.netlify.app/"
@@ -71,7 +72,7 @@ export default function ProjectCards() {
           <Projects
             title="Snakeio - A Video Game "
             text=" A classic snake game where the player controls a growing snake on a grid, collecting food to increase score and speed, while avoiding collisions with walls or itself."
-            src="/images/snakeio.png"
+            src="/images/snakeio.webp"
             github="https://github.com/GregoryRobetertson/snakeGame"
             link="https://snakeiogame.netlify.app/"
             skills={["HTML", "CSS", "JavaScript"]}
