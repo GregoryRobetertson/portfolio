@@ -45,7 +45,7 @@ export default function Projects({
                 className="text-white hover:underline hover:text-blue-500"
                 target="_blank"
               >
-                View Frontend Repository
+                View Repo
               </a>
             )}
             {backend && (
@@ -54,7 +54,7 @@ export default function Projects({
                 className="text-white hover:underline hover:text-green-500"
                 target="_blank"
               >
-                View Backend Repository
+                View Backend Repo
               </a>
             )}
             {link && (

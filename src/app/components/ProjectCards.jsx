@@ -2,6 +2,7 @@
 import React from "react";
 import Projects from "./Projects";
 import { motion } from "framer-motion";
+
 export default function ProjectCards() {
   return (
     <>
@@ -23,18 +24,20 @@ export default function ProjectCards() {
             text="App that lets people check the weather by searching a city name."
             src="/images/weather.webp"
             link="https://forecastpro.netlify.app/"
+            github="https://github.com/GregoryRobetertson/weather-app"
             skills={["NextJS", "React", "Tailwind Css", "Bootstrap"]}
           />
           <Projects
             title="GlobalSphere Connect - Social Media Platform"
-            text="A Social platform that focuses on the news, weather, and lets people post blogs and connect with each other."
+            text="A social platform I built with Next.js and React that brings blogs, real-time news, and weather updates into one place. Users can sign up, post content, and connect with others. I used Firebase for auth and MongoDB for data. One challenge I faced was a redirect URI mismatch error during Google login, which I fixed by properly configuring the credentials in Google Cloud. The result: a fast, clean, and seamless user experience."
             src="/images/globalsphereconnect.webp"
             link="https://globalsphereconnect.netlify.app/"
+            github="https://github.com/GregoryRobetertson/GlobalSphere-connect"
             skills={["NextJS", "React", "Firebase", "MongoDB", "Tailwind Css"]}
           />
           <Projects
             title="Sunrisesip - Coffee Shop E commerce site "
-            text="A online coffee shop for users to shop cofee products online."
+            text="I built a fully functional online coffee shop where users can browse, add items to their cart, and check out — all in one smooth flow. The frontend is built with React, Next.js, Tailwind CSS, and a sprinkle of Bootstrap for structure and styling. On the backend, I used Node.js and Express to create a RESTful API that handles products, cart management, and the entire checkout process. Getting the API and frontend to stay in sync was a solid challenge, but it taught me a lot about building real-world, full-stack apps from scratch."
             src="/images/coffeeshop.webp"
             github="https://github.com/GregoryRobetertson/coffee-shop-frontend"
             backend="https://github.com/GregoryRobetertson/coffee-shop-backend/tree/main"
@@ -52,7 +55,7 @@ export default function ProjectCards() {
           />
           <Projects
             title="Kick Cartel - Coffee Shop E commerce Sneaker Shop "
-            text="A online Sneaker shop for users to sneakers online."
+            text="I built an online sneaker shop where users can browse the latest kicks, add their favorites to the cart, and easily check out. The frontend uses React, Next.js, Tailwind CSS, and Bootstrap to create a sleek, responsive design. On the backend, I relied on Node.js and Express to power a RESTful API that manages products, carts, and the checkout flow. "
             src="/images/kickcartel.webp"
             github="https://github.com/GregoryRobetertson/kick-cartel"
             backend="https://github.com/GregoryRobetertson/kick-cartel-backend"

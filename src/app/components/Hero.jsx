@@ -53,8 +53,9 @@ export default function Hero() {
               duration: 0.6,
             }}
           >
-            I design and build fast, modern web applications for businesses and
-            startups.
+            I’m a full stack developer who loves building clean, responsive
+            websites using React, Express, and MongoDB focused on real world
+            impact and user experience.
           </motion.p>
 
           {/* Buttons */}
