@@ -27,21 +27,27 @@ export default function About() {
               </h3>
               <p className="text-white mb-6 text-lg leading-relaxed">
                 I’m{" "}
-                <span className="text-blue-400 font-semibold">Gregory.</span> I
-                approach development with the same determination and work ethic
-                that shaped me growing up. As a full stack developer, I
-                specialize in building clean, responsive web applications using
-                React, Node.js, Express, and Tailwind CSS—turning concepts into
-                reliable, user-friendly products. I’m passionate about solving
-                problems efficiently and creating solutions that are both
-                functional and elegant. Continuous learning is important to me,
-                and I stay up to date with the latest technologies to ensure my
-                skills evolve with the industry. Outside of development, I’m
+                <span className="text-blue-400 font-semibold">Gregory.</span> a
+                developer who loves turning ideas into smooth digital
+                experiences, I approach development with the same determination
+                and work ethic that shaped me growing up. My design philosophy
+                is rooted in empathy; I believe truly great solutions aren't
+                just about what I think works, but about understanding the
+                people who will interact with them. It's about stepping into
+                their shoes, identifying their needs and pain points, and then
+                crafting solutions that are not just elegant, but inherently
+                intuitive and genuinely helpful. I love coding because it pushes
+                me to be more creative and makes me feel like I can build
+                anything I set my mind to. I'm passionate about solving problems
+                efficiently and creating solutions that are both functional and
+                elegant for the end-user. Continuous learning is important to
+                me, and I stay up to date with the latest technologies to keep
+                my skills sharp and relevant. Outside of development, I'm
                 committed to personal and professional growth. In my downtime, I
-                enjoy playing drums and gaming, which help me recharge and stay
-                balanced. I’m eager to collaborate with teams that value
-                dedication, integrity, and meaningful impact. I’m currently open
-                to full-time roles, and I also take on freelance projects
+                enjoy playing drums and gaming both help me recharge and stay
+                balanced. I'm excited to collaborate with teams that value
+                dedication, integrity, and meaningful work. I'm currently open
+                to full-time roles and also take on freelance projects.
               </p>
 
               {/* Visual Connection Line */}
