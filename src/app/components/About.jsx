@@ -36,18 +36,28 @@ export default function About() {
             <p className="text-zinc-300 text-base leading-7">
               I’m{" "}
               <span className="text-blue-400 font-semibold">
-                Gregory Robertson Jr.
+                Gregory Robertson Jr,
               </span>{" "}
-              — a frontend and full-stack developer with a passion for
+              a frontend and full-stack developer with a passion for
               transforming ideas into intuitive and elegant digital experiences.
-              My background and upbringing have shaped a strong work ethic and a
-              mindset focused on growth, creativity, and resilience.
+              I approach development with the same determination and work ethic
+              that shaped me growing up.
               <br />
               <br />
-              I believe in building with empathy — crafting solutions based on
-              the needs of real people. Clean UI, smart UX, and scalable code
-              are my focus. I love coding because it pushes me to solve problems
-              in creative ways, and keeps me constantly learning.
+              I believe in building with empathy, crafting solutions based on
+              the needs of people. Clean UI, smart UX, and scalable code are my
+              focus. I love coding because it pushes me to be more creative and
+              makes me feel like I can build anything I set my mind to. I'm
+              passionate about solving problems efficiently and creating
+              solutions that are both functional and elegant for the end-user.
+              Continuous learning is important to me, and I stay up to date with
+              the latest technologies to keep my skills sharp and relevant.
+              Outside of development, I'm committed to personal and professional
+              growth. In my downtime, I enjoy playing drums and gaming both help
+              me recharge and stay balanced. I'm excited to collaborate with
+              teams that value dedication, integrity, and meaningful work. I'm
+              currently open to full-time roles and also take on freelance
+              projects.
               <br />
               <br />
               Outside of work, I enjoy playing drums and gaming to reset. I'm

@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import React, { useRef, useState } from "react";
 import Github from "lucide-react/dist/esm/icons/github";
 import Linkedin from "lucide-react/dist/esm/icons/linkedin";
-import Mail from "lucide-react/dist/esm/icons/mail";
 
 export default function Contact() {
   const service = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
