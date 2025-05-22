@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import React from "react";
-import PropTypes from "prop-types";
 export default function About() {
   return (
     <>
@@ -27,92 +26,72 @@ export default function About() {
                 My Introduction
               </h3>
               <p className="text-white mb-6 text-lg leading-relaxed">
-                I’m <span className="text-blue-400 font-semibold">Gregory</span>{" "}
-                a full stack developer passionate about building responsive,
-                user-friendly web applications. I specialize in tools like
-                React, Node.js, Express, and Tailwind CSS, and I love turning
-                ideas into real, working products. Whether I’m designing a clean
-                UI or working behind the scenes on the backend, I enjoy creating
-                solutions that are fast, functional, and easy to use. I'm always
-                learning and staying up to date with the latest tech trends.
-                Outside of coding, I’m focused on personal and professional
-                growth. In my free time, I enjoy playing drums and video games.
-                I'm currently looking for new opportunities to join great teams
-                and build things that make a real impact. Reach out if you need
-                a developer to bring your website idea to life I’m always open
-                to new projects.
+                I’m{" "}
+                <span className="text-blue-400 font-semibold">Gregory.</span> I
+                approach development with the same determination and work ethic
+                that shaped me growing up. As a full stack developer, I
+                specialize in building clean, responsive web applications using
+                React, Node.js, Express, and Tailwind CSS—turning concepts into
+                reliable, user-friendly products. I’m passionate about solving
+                problems efficiently and creating solutions that are both
+                functional and elegant. Continuous learning is important to me,
+                and I stay up to date with the latest technologies to ensure my
+                skills evolve with the industry. Outside of development, I’m
+                committed to personal and professional growth. In my downtime, I
+                enjoy playing drums and gaming, which help me recharge and stay
+                balanced. I’m eager to collaborate with teams that value
+                dedication, integrity, and meaningful impact. I’m currently open
+                to full-time roles, and I also take on freelance projects
               </p>
-
-              <div className="mt-8 p-4 bg-zinc-900 border-l-4 border-blue-500 rounded-md cursor-pointer hover:shadow-lg transition-shadow duration-300">
-                <h4 className="text-blue-400 font-semibold mb-1">
-                  Latest from my Blog
-                </h4>
-                <a
-                  href="/content/why-small-business-needs-modern-website-2025.md"
-                  className="text-white font-bold text-lg hover:underline"
-                >
-                  How to Build Responsive React Apps — A Beginner’s Guide
-                </a>
-                <p className="text-zinc-400 mt-1 text-sm leading-relaxed">
-                  A quick overview of key concepts to make your React projects
-                  mobile-friendly and smooth.
-                </p>
-                <a
-                  href="/blog"
-                  className="inline-block mt-2 text-blue-500 hover:underline font-medium"
-                >
-                  See all blog posts →
-                </a>
-              </div>
-
-              {/* Visual Connection Line */}
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-2 w-16 bg-blue-500 rounded-full"></div>
             </div>
 
-            {/* Right Column - Tech Stack */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {/* Frontend */}
-              <div className="bg-black rounded-2xl border pt-8 relative">
-                {/* Visual Connection Indicator */}
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-8 bg-blue-500 rounded-full"></div>
-                <h4 className="font-semibold mb-3 text-white p-6">Frontend</h4>
-                <div className="flex flex-wrap gap-2 cursor-pointer p-6 pt-0">
-                  {[
-                    "HTML",
-                    "CSS",
-                    "JavaScript",
-                    "React",
-                    "Next.js",
-                    "Bootstrap",
-                    "Tailwind CSS",
-                  ].map((tech) => (
+            {/* Visual Connection Line */}
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-2 w-16 bg-blue-500 rounded-full"></div>
+          </div>
+
+          {/* Right Column - Tech Stack */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {/* Frontend */}
+            <div className="bg-black rounded-2xl border pt-8 relative">
+              {/* Visual Connection Indicator */}
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-8 bg-blue-500 rounded-full"></div>
+              <h4 className="font-semibold mb-3 text-white p-6">Frontend</h4>
+              <div className="flex flex-wrap gap-2 cursor-pointer p-6 pt-0">
+                {[
+                  "HTML",
+                  "CSS",
+                  "JavaScript",
+                  "React",
+                  "Next.js",
+                  "Bootstrap",
+                  "Tailwind CSS",
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700 hover:scale-105"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Backend */}
+            <div className="bg-black rounded-xl border pt-8 relative">
+              {/* Visual Connection Indicator */}
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-8 bg-green-500 rounded-full"></div>
+              <h4 className="font-semibold mb-3 text-white p-6">Backend</h4>
+              <div className="flex flex-wrap gap-2 cursor-pointer p-6 pt-0">
+                {["Node.js", "Express", "Firebase", "APIs", "Jest"].map(
+                  (tech) => (
                     <span
                       key={tech}
                       className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700 hover:scale-105"
                     >
                       {tech}
                     </span>
-                  ))}
-                </div>
-              </div>
-
-              {/* Backend */}
-              <div className="bg-black rounded-xl border pt-8 relative">
-                {/* Visual Connection Indicator */}
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-8 bg-green-500 rounded-full"></div>
-                <h4 className="font-semibold mb-3 text-white p-6">Backend</h4>
-                <div className="flex flex-wrap gap-2 cursor-pointer p-6 pt-0">
-                  {["Node.js", "Express", "Firebase", "APIs", "Jest"].map(
-                    (tech) => (
-                      <span
-                        key={tech}
-                        className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700 hover:scale-105"
-                      >
-                        {tech}
-                      </span>
-                    )
-                  )}
-                </div>
+                  )
+                )}
               </div>
 
               {/* Database */}
