@@ -15,7 +15,9 @@ export default function About() {
       <div className="max-w-6xl mx-auto space-y-16">
         {/* Title */}
         <div className="text-center">
-          <h2 className="text-white text-4xl font-bold mb-2">About Me</h2>
+          <h2 className="text-white text-4xl font-bold mb-2">
+            <span className="text-blue-700">About</span> Me
+          </h2>
           <p className="text-zinc-400 text-lg max-w-xl mx-auto">
             A quick look into who I am, what I do, and the tools I love.
           </p>

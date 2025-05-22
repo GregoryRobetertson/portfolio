@@ -34,7 +34,7 @@ export default function Contact() {
       className="bg-zinc-950 py-16 px-4 sm:px-6 lg:px-20"
     >
       <h2 className="text-center text-4xl font-extrabold text-white mb-12">
-        <span className="text-blue-500">Contact</span> Me
+        <span className="text-blue-700">Contact</span> Me
       </h2>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">

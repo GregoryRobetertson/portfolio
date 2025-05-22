@@ -72,13 +72,13 @@ export default function Hero() {
           >
             <a
               href="/resume.zip"
-              className="bg-white text-black rounded-lg px-6 py-3 hover:bg-gray-600"
+              className="bg-white text-black rounded-lg px-6 py-3 hover:bg-gray-800"
             >
               Download Resume
             </a>
             <a
               href="#Contact"
-              className="bg-blue-700 text-white rounded-lg px-6 py-3 hover:bg-blue-800"
+              className="bg-blue-700 text-white rounded-lg px-6 py-3 hover:bg-blue-950"
             >
               Get In Touch
             </a>

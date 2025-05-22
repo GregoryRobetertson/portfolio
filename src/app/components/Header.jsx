@@ -79,7 +79,7 @@ export default function Header() {
             <a
               key={item.name}
               href={item.href}
-              className="px-4 py-2 rounded-md hover:text-blue-700"
+              className="px-4 py-2 rounded-md hover:text-blue-950"
               onClick={() => setMenuOpen(false)} // Close after click
             >
               {item.name}

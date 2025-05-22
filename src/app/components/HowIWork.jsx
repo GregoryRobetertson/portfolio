@@ -43,7 +43,7 @@ export default function HowIWork() {
     >
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-white mb-12">
-          How I Work
+          How I <span className="text-blue-700">Work</span>
         </h2>
 
         <div className="relative border-l border-zinc-700 pl-16 space-y-12">
