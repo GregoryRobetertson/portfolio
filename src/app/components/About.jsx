@@ -43,55 +43,55 @@ export default function About() {
                 dedication, integrity, and meaningful impact. I’m currently open
                 to full-time roles, and I also take on freelance projects
               </p>
+
+              {/* Visual Connection Line */}
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-2 w-16 bg-blue-500 rounded-full"></div>
             </div>
 
-            {/* Visual Connection Line */}
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 h-2 w-16 bg-blue-500 rounded-full"></div>
-          </div>
-
-          {/* Right Column - Tech Stack */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            {/* Frontend */}
-            <div className="bg-black rounded-2xl border pt-8 relative">
-              {/* Visual Connection Indicator */}
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-8 bg-blue-500 rounded-full"></div>
-              <h4 className="font-semibold mb-3 text-white p-6">Frontend</h4>
-              <div className="flex flex-wrap gap-2 cursor-pointer p-6 pt-0">
-                {[
-                  "HTML",
-                  "CSS",
-                  "JavaScript",
-                  "React",
-                  "Next.js",
-                  "Bootstrap",
-                  "Tailwind CSS",
-                ].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700 hover:scale-105"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Backend */}
-            <div className="bg-black rounded-xl border pt-8 relative">
-              {/* Visual Connection Indicator */}
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-8 bg-green-500 rounded-full"></div>
-              <h4 className="font-semibold mb-3 text-white p-6">Backend</h4>
-              <div className="flex flex-wrap gap-2 cursor-pointer p-6 pt-0">
-                {["Node.js", "Express", "Firebase", "APIs", "Jest"].map(
-                  (tech) => (
+            {/* Right Column - Tech Stack */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              {/* Frontend */}
+              <div className="bg-black rounded-2xl border pt-8 relative">
+                {/* Visual Connection Indicator */}
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-8 bg-blue-500 rounded-full"></div>
+                <h4 className="font-semibold mb-3 text-white p-6">Frontend</h4>
+                <div className="flex flex-wrap gap-2 cursor-pointer p-6 pt-0">
+                  {[
+                    "HTML",
+                    "CSS",
+                    "JavaScript",
+                    "React",
+                    "Next.js",
+                    "Bootstrap",
+                    "Tailwind CSS",
+                  ].map((tech) => (
                     <span
                       key={tech}
                       className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700 hover:scale-105"
                     >
                       {tech}
                     </span>
-                  )
-                )}
+                  ))}
+                </div>
+              </div>
+
+              {/* Backend */}
+              <div className="bg-black rounded-xl border pt-8 relative">
+                {/* Visual Connection Indicator */}
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-2 h-8 bg-green-500 rounded-full"></div>
+                <h4 className="font-semibold mb-3 text-white p-6">Backend</h4>
+                <div className="flex flex-wrap gap-2 cursor-pointer p-6 pt-0">
+                  {["Node.js", "Express", "Firebase", "APIs", "Jest"].map(
+                    (tech) => (
+                      <span
+                        key={tech}
+                        className="bg-black text-white px-3 py-1 rounded-full text-sm hover:scale-105 transition-transform duration-200 cursor-pointer border border-zinc-700 hover:outline-none hover:border-blue-700 hover:scale-105"
+                      >
+                        {tech}
+                      </span>
+                    )
+                  )}
+                </div>
               </div>
 
               {/* Database */}
