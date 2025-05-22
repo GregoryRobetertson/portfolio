@@ -1,18 +1,20 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-
-import { Github, Linkedin, Mail } from "lucide-react";
-import NowStatus from "./NowStatus";
+import Github from "lucide-react/dist/esm/icons/github";
+import Linkedin from "lucide-react/dist/esm/icons/linkedin";
+import Mail from "lucide-react/dist/esm/icons/mail";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
+
+const NowStatus = dynamic(() => import("./NowStatus"), {});
 
 export default function Hero() {
   const text = "Hi I'm Gregory Robertson";
   const letters = text.split("");
 
   return (
-    <section className="relative h-screen w-full text-white bg-cover bg-no-repeat bg-center bg-[url(/images/hero.png)]">
+    <section className="relative h-screen w-full text-white bg-cover bg-no-repeat bg-center bg-[url(/images/hero.webp)]">
       {/*Overlay*/}
       <div className="absolute inset-0 bg-black opacity-85"></div>
 

@@ -2,7 +2,6 @@
 import React from "react";
 import Projects from "./Projects";
 import { motion } from "framer-motion";
-motion;
 export default function ProjectCards() {
   return (
     <>
