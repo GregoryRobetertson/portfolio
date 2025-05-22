@@ -1,8 +1,11 @@
+"use client";
 import Image from "next/image";
 import React from "react";
-import { motion } from "framer-motion";
+
 import { Github, Linkedin, Mail } from "lucide-react";
 import NowStatus from "./NowStatus";
+import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
 
 export default function Hero() {
   const text = "Hi I'm Gregory Robertson";
@@ -124,7 +127,7 @@ export default function Hero() {
         {/* Profile Image */}
         <div className="mt-8 max-lg:mt-12 flex jusitfy-center">
           <Image
-            src="/images/profile.png"
+            src="/images/profile.webp"
             alt="profile image"
             width={300}
             height={300}
