@@ -8,64 +8,65 @@ export default function About() {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
-      transition={{
-        delay: 0.4,
-        duration: 1.5,
-        ease: "easeOut",
-      }}
-      className="bg-zinc-950"
+      transition={{ delay: 0.2, duration: 1.2, ease: "easeOut" }}
       id="about"
+      className="bg-zinc-950 py-20 px-4"
     >
-      <div className="max-w-6xl mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-center mb-12 text-white">
-          About Me
-        </h2>
+      <div className="max-w-6xl mx-auto space-y-16">
+        {/* Title */}
+        <div className="text-center">
+          <h2 className="text-white text-4xl font-bold mb-2">About Me</h2>
+          <p className="text-zinc-400 text-lg max-w-xl mx-auto">
+            A quick look into who I am, what I do, and the tools I love.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
-          {/* Left: Introduction Summary */}
-          <div className="bg-gradient-to-br from-zinc-900 to-black shadow-lg rounded-xl p-6 border relative">
-            <h3 className="text-2xl font-semibold mb-4 text-white">
+        {/* Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {/* Introduction */}
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            className="bg-gradient-to-br from-zinc-900 to-black border border-zinc-800 shadow-xl p-8 rounded-3xl"
+          >
+            <h3 className="text-white text-2xl font-semibold mb-4">
               My Introduction
             </h3>
-            <p className="text-white mb-6 text-lg leading-relaxed">
-              I’m <span className="text-blue-400 font-semibold">Gregory.</span>{" "}
-              A developer who loves turning ideas into smooth digital
-              experiences. I approach development with the same determination
-              and work ethic that shaped me growing up. My design philosophy is
-              rooted in empathy; I believe truly great solutions aren't just
-              about what I think works, but about understanding the people who
-              will interact with them. It's about stepping into their shoes,
-              identifying their needs and pain points, and then crafting
-              solutions that are not just elegant, but inherently intuitive and
-              genuinely helpful. I love coding because it pushes me to be more
-              creative and makes me feel like I can build anything I set my mind
-              to. I'm passionate about solving problems efficiently and creating
-              solutions that are both functional and elegant for the end-user.
-              Continuous learning is important to me, and I stay up to date with
-              the latest technologies to keep my skills sharp and relevant.
-              Outside of development, I'm committed to personal and professional
-              growth. In my downtime, I enjoy playing drums and gaming — both
-              help me recharge and stay balanced. I'm excited to collaborate
-              with teams that value dedication, integrity, and meaningful work.
-              I'm currently open to full-time roles and also take on freelance
-              projects.
+            <p className="text-zinc-300 text-base leading-7">
+              I’m{" "}
+              <span className="text-blue-400 font-semibold">
+                Gregory Robertson Jr.
+              </span>{" "}
+              — a frontend and full-stack developer with a passion for
+              transforming ideas into intuitive and elegant digital experiences.
+              My background and upbringing have shaped a strong work ethic and a
+              mindset focused on growth, creativity, and resilience.
+              <br />
+              <br />
+              I believe in building with empathy — crafting solutions based on
+              the needs of real people. Clean UI, smart UX, and scalable code
+              are my focus. I love coding because it pushes me to solve problems
+              in creative ways, and keeps me constantly learning.
+              <br />
+              <br />
+              Outside of work, I enjoy playing drums and gaming to reset. I'm
+              always open to opportunities that challenge me and allow me to
+              grow — whether in a team setting or as a freelancer.
             </p>
-          </div>
+          </motion.div>
 
-          {/* Right: Tech Stack */}
+          {/* Tech Stack */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
             className="space-y-6"
           >
-            {/* Frontend */}
-            <div className="bg-[#111] rounded-2xl border border-zinc-800 p-6 shadow-md">
-              <h4 className="text-white text-xl font-semibold mb-4">
-                Frontend
-              </h4>
-              <div className="flex flex-wrap gap-3">
-                {[
+            {[
+              {
+                title: "Frontend",
+                items: [
                   "HTML",
                   "CSS",
                   "JavaScript",
@@ -73,65 +74,44 @@ export default function About() {
                   "Next.js",
                   "Bootstrap",
                   "Tailwind CSS",
-                ].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-black text-white px-3 py-1 rounded-full text-sm border border-zinc-700 hover:border-blue-500 transition-transform transform hover:scale-105"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Backend */}
-            <div className="bg-[#111] rounded-2xl border border-zinc-800 p-6 shadow-md">
-              <h4 className="text-white text-xl font-semibold mb-4">Backend</h4>
-              <div className="flex flex-wrap gap-3">
-                {["Node.js", "Express", "Firebase", "APIs", "Jest"].map(
-                  (tech) => (
+                ],
+                border: "border-blue-500",
+              },
+              {
+                title: "Backend",
+                items: ["Node.js", "Express", "Firebase", "APIs", "Jest"],
+                border: "border-green-500",
+              },
+              {
+                title: "Database",
+                items: ["MongoDB", "MySQL"],
+                border: "border-purple-500",
+              },
+              {
+                title: "Tools",
+                items: ["API", "Git", "VS Code", "Linux", "CI/CD"],
+                border: "border-yellow-500",
+              },
+            ].map((section, index) => (
+              <div
+                key={index}
+                className={`bg-[#111] rounded-2xl border border-zinc-800 p-6 shadow-md`}
+              >
+                <h4 className="text-white text-xl font-semibold mb-4">
+                  {section.title}
+                </h4>
+                <div className="flex flex-wrap gap-3">
+                  {section.items.map((tech) => (
                     <span
                       key={tech}
-                      className="bg-black text-white px-3 py-1 rounded-full text-sm border border-zinc-700 hover:border-green-500 transition-transform transform hover:scale-105"
+                      className={`text-white bg-black border border-zinc-700 hover:${section.border} px-3 py-1 rounded-full text-sm transition-transform transform hover:scale-105`}
                     >
                       {tech}
                     </span>
-                  )
-                )}
+                  ))}
+                </div>
               </div>
-            </div>
-
-            {/* Database */}
-            <div className="bg-[#111] rounded-2xl border border-zinc-800 p-6 shadow-md">
-              <h4 className="text-white text-xl font-semibold mb-4">
-                Database
-              </h4>
-              <div className="flex flex-wrap gap-3">
-                {["MySQL", "MongoDB"].map((tech) => (
-                  <span
-                    key={tech}
-                    className="bg-black text-white px-3 py-1 rounded-full text-sm border border-zinc-700 hover:border-purple-500 transition-transform transform hover:scale-105"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-
-            {/* Tools */}
-            <div className="bg-[#111] rounded-2xl border border-zinc-800 p-6 shadow-md">
-              <h4 className="text-white text-xl font-semibold mb-4">Tools</h4>
-              <div className="flex flex-wrap gap-3">
-                {["API", "Git", "VS Code"].map((tool) => (
-                  <span
-                    key={tool}
-                    className="bg-black text-white px-3 py-1 rounded-full text-sm border border-zinc-700 hover:border-yellow-500 transition-transform transform hover:scale-105"
-                  >
-                    {tool}
-                  </span>
-                ))}
-              </div>
-            </div>
+            ))}
           </motion.div>
         </div>
       </div>
