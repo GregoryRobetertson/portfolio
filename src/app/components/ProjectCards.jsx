@@ -93,11 +93,18 @@ export default function ProjectCards() {
             },
             {
               title: "Bookit Easy",
-              text: "Bookit Easy is a full stack booking system app that let users book appointments and view them. Users must be signed in to book and view appointments."
+              text: "Bookit Easy is a full stack booking system app that let users book appointments and view them. Users must be signed in to book and view appointments.",
               src: "/images/bookiteasy.webp",
               github: "https://github.com/GregoryRobetertson/booking-app",
               link: "https://bookiteasy.netlify.app/",
-              skills: ["Nextjs","React","Node","Tailwindcss","Firebase","Mongodb", ],
+              skills: [
+                "Nextjs",
+                "React",
+                "Node",
+                "Tailwindcss",
+                "Firebase",
+                "Mongodb",
+              ],
             },
           ].map((project, idx) => (
             <motion.div
