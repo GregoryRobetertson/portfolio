@@ -4,7 +4,6 @@ This is my personal web developer portfolio built using modern web technologies.
 
 ---
 
-
 ## Bugs
 
 - Error: 'React' must be in scope when using JSX
